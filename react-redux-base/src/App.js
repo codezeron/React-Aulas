@@ -1,15 +1,16 @@
-import Login from './pages/Login';
-import { Title } from './pages/Login/styled';
-import GlobalStyles, { Container } from './styles/GlobalStyles';
+import { BrowserRouter } from 'react-router-dom';
+
+import Header from './components/Header';
+import Routes from './routes';
+import GlobalStyles from './styles/GlobalStyles';
 
 function App() {
   return (
-    <Container>
-      <Title>
-        <Login />
-        <GlobalStyles />
-      </Title>
-    </Container>
+    <BrowserRouter>
+      <Header />
+      <Routes />
+      <GlobalStyles />
+    </BrowserRouter>
   );
 }
 
