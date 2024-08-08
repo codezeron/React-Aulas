@@ -4,12 +4,12 @@ import { Route, Routes } from 'react-router-dom';
 import Login from '../pages/Login';
 import Page404 from '../pages/Page404';
 
-export default function Router() {
+export default function Rotas() {
   return (
     <>
       <Routes>
-        <Route exact path="/" Component={Login} />
-        <Route path="*" Component={Page404} />
+        <Route exact path="/" element={<Login />} />
+        <Route path="*" element={<Page404 />} />
       </Routes>
     </>
   );
